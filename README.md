@@ -1,5 +1,10 @@
 # localstack
 
+# Starch localstack in dockers
+CD to the directory where docker-cmpose file is
+docker-compose up -d        -- Start services
+localstack status services  -- Check status
+
 
 # Check health in browser
 http://localhost:4566/healthcheck
