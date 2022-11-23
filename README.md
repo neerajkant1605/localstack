@@ -35,6 +35,20 @@ aws  --endpoint-url http://localhost:4566 s3 mb s3://ho.leds.np.dts.recon.output
 # List Buckets
 aws  --endpoint-url http://localhost:4566 s3 ls
 
+# Maven Dependencies needed for spring
+
+        <dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>1.12.347</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-core</artifactId>
+			<version>1.12.347</version>
+		</dependency>
+
 
 
 
