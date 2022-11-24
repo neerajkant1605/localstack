@@ -20,8 +20,8 @@ region = eu-west-1
 
 Credentials file has two sets of credentials as below:
 [default]
-aws_access_key_id = AKIAW62INZ6ZL3**********
-aws_secret_access_key = P7ioTvWUrR4yvgc7yfBWXxiLg33/**********
+aws_access_key_id = XXXXX
+aws_secret_access_key = YYYYY
 [localstack]
 aws_access_key_id = test
 aws_secret_access_key = test
@@ -40,7 +40,7 @@ aws  --endpoint-url http://localhost:4566 s3 mb s3://ho.leds.np.dts.recon.output
 # List Buckets
 aws  --endpoint-url http://localhost:4566 s3 ls
 
-# Maven Dependencies needed for spring
+# Maven Dependencies needed for spring S3
 
         <dependency>
 			<groupId>com.amazonaws</groupId>
