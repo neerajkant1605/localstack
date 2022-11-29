@@ -34,11 +34,18 @@ test> test> eu-west-1 (This will add content to above two files)
 aws configure list
 
 # Make/Create Buckets
-aws  --endpoint-url http://localhost:4566 s3 mb s3://ho.leds.np.dts.recon.input
-aws  --endpoint-url http://localhost:4566 s3 mb s3://ho.leds.np.dts.recon.output
+aws  --endpoint-url http://localhost:4566 s3 mb s3://s3.spring.input
+aws  --endpoint-url http://localhost:4566 s3 mb s3://s3.spring.output
 
 # List Buckets
 aws  --endpoint-url http://localhost:4566 s3 ls
+
+# Upload files
+aws --endpoint-url=http://localhost:4566 s3 cp E:\Files\Incoming\sales_records.txt  s3://s3.spring.input
+
+# Bucket content operations
+List files: aws --endpoint-url=http://localhost:4566 s3 ls  s3://s3.spring.input
+Remove all files:  aws --endpoint-url=http://localhost:4566 s3 rm  s3://s3.spring.input --recursive
 
 # Maven Dependencies needed for spring S3
 
