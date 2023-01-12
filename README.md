@@ -38,7 +38,7 @@ aws configure list
 aws  --endpoint-url http://localhost:4566 s3 mb s3://s3.spring.input
 aws  --endpoint-url http://localhost:4566 s3 mb s3://s3.spring.output
 ## AWS Colsole
-aws s3 mb s3://inbound-ankay					-- Create bucket__
+aws s3 mb s3://inbound-ankay					-- Create bucket \ 
 aws s3 ls										-- List buckets
 aws s3 cp  BasicText.txt s3://inbound-ankay		-- Upload file to bucket
 aws s3 ls s3://inbound-ankay					-- Get contents of the bucket
