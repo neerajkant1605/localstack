@@ -1,0 +1,18 @@
+2023-01-05T12:50:11.726  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-01-05T12:50:11.726  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-01-05T12:50:11.746  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-01-05T12:50:11.746  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-01-05T12:50:11.865  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "start_runtime_components" took 603.37ms
+2023-01-05T12:51:41.294  INFO --- [functhread18] l.services.motoserver      : starting moto server on http://0.0.0.0:52261
+2023-01-05T12:51:41.295  INFO --- [   asgi_gw_0] localstack.services.infra  : Starting mock S3 service on http port 4566 ...
+2023-01-05T12:51:41.616  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 404 (NoSuchBucket)
+2023-01-05T12:56:21.060  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListBuckets => 200
+2023-01-05T12:56:41.275  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.CreateBucket => 200
+2023-01-05T12:56:50.546  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.CreateBucket => 200
+2023-01-05T12:56:56.646  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListBuckets => 200
+2023-01-05T12:57:09.411  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 200
+2023-01-05T12:57:09.452  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetObject => 200
+2023-01-05T12:57:09.495  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 200
+2023-01-05T15:57:48.903  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 200
+2023-01-05T15:57:48.949  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetObject => 200
+2023-01-05T15:57:48.982  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutObject => 200

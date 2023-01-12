@@ -1,6 +1,6 @@
 # localstack
 
-# Starch localstack in dockers
+# Start localstack in dockers
 CD to the directory where docker-cmpose file is
 docker-compose up -d        -- Start services
 localstack status services  -- Check status
@@ -34,8 +34,14 @@ test> test> eu-west-1 (This will add content to above two files)
 aws configure list
 
 # Make/Create Buckets
+## Local Stack
 aws  --endpoint-url http://localhost:4566 s3 mb s3://s3.spring.input
 aws  --endpoint-url http://localhost:4566 s3 mb s3://s3.spring.output
+## AWS Colsole
+aws s3 mb s3://inbound-ankay					-- Create bucket
+aws s3 ls										-- List buckets
+aws s3 cp  BasicText.txt s3://inbound-ankay		-- Upload file to bucket
+aws s3 ls s3://inbound-ankay					-- Get contents of the bucket
 
 # List Buckets
 aws  --endpoint-url http://localhost:4566 s3 ls
